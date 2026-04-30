@@ -6,6 +6,85 @@
     <title>CineMax CESDE</title>
 </head>
 <body>
-    
+    <h1>CineMax CESDE</h1>
+    <fieldset>
+        <legend>Compra de tickets</legend>
+        <!--Creación del formulario para la compra de tickets-->
+        <form action="">
+            <p>
+                <label for="">Nombre del Cliente
+                    <input type="text" name="" id="" placeholder="Digite su nombre">
+                </label>
+            </p>
+            <p>
+                <label for="">Título de la Película
+                    <input type="text" name="" id="" placeholder="Digite el titulo de la pelicula">
+                </label>
+            </p>
+            <p>
+                <label for="">Edad
+                    <input type="number" name="" id="" min="2" max="99">
+                </label>
+            </p>
+            <p>
+                <label for="">Cantidad de Tickets
+                    <input type="number" name="" id="" min="1" max="9">
+                </label>
+            </p>
+            <p>
+                <button type="submit">Procesar Compra</button>
+            </p>
+        </form>
+    </fieldset>
+    <p>
+        <!--Creación de la tabla contenedora de la cartelera de cine-->
+        <table border="1">
+            <thead>
+                <!--Definición de los titulos en las columnas de la tabla-->
+                <tr>
+                    <th>Título</th>
+                     <th>Horario</th>
+                    <th>Genero</th>
+                     <th>Poster</th>
+                     <th>Trailer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>El señor de los anillos</td>
+                    <td>20:30</td>
+                    <td>Aventura</td>
+                    <td>
+                        <img src="/proyectoIntegrador/img/TLOTR.jpg" alt="PosterTLOTR">
+                    </td>
+                    <td>
+                        <iframe src="https://www.youtube.com/embed/LbfMDwc4azU?si=qCzIuHfO63Cb4S1R" frameborder="0" title="TrailerTLOTF"></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Harry Potter</td>
+                    <td>16:45</td>
+                    <td>Fantasía</td>
+                     <td>
+                        <img src="/proyectoIntegrador/img/HPOOF.jpg" alt="PosterHP">
+                    </td>
+                     <td>
+                        <iframe src="https://www.youtube.com/embed/jdEulcjAvQI?si=0uWUv2d4bIsIaGHV" title="TrailerHP" frameborder="0"></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>21:10</td>
+                    <td>Ciencia Ficción</td>
+                    <td>
+                        <img src="/proyectoIntegrador/img/Avatar.jpg" alt="PosterAvatar">
+                    </td>
+                    <td>
+                        <iframe src="https://www.youtube.com/embed/aVdO-cx-McA?si=-df82sQ8AcmzRlBI" frameborder="0" title="AvatarTrailer"></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
 </body>
 </html>
