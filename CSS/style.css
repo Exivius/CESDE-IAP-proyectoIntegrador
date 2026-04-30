@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+}
+
+.main_content{
+    display: flex;
+}
+
+/*Header*/
+
+/*Main*/
+
+/*Hav que los elementos del formulatio de compra queden uno debajo del otro*/
+.form_purchase{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
