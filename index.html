@@ -8,30 +8,46 @@
 </head>
 <body>
     <header>
-        <h1>CineMax CESDE</h1>
+        <section class="header_section">
+            <div class="header_brand">
+                <img src="/proyectoIntegrador/img/logo1.png" alt="Logo CineMax CESDE" class="header_logo">
+                <h1 class="header_title">CineMax CESDE</h1>
+            </div>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Comidas</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </section>
+
     </header>
     <main>
         <section class="main_content">
             <div class="ticket_purchase">
-                    <form action="">
-                        <div class="form_purchase">
-                            <label for="" class="">Nombre del Cliente
-                                <input type="text" name="" id="" placeholder="Digite su nombre" class="purchase_input" aria-label="Nombre del Cliente">
-                            </label>
-                            <label for="">Título de la Película
-                                <input type="text" name="" id="" placeholder="Digite el titulo de la pelicula" class="purchase_input" aria-label="Titulo de la Pelicula">
-                            </label>
-                            <label for="">Edad
-                                <input type="number" name="" id="" min="2" max="99" class="purchase_input" aria-label="Edad">
-                            </label>
-                            <label for="">Cantidad de Tickets
-                                <input type="number" name="" id="" min="1" max="9" class="purchase_input" aria-label="Cantidad de Tickets">
-                            </label>
-                        </div>
-                        <div class="form_actions">
-                            <button type="submit">Procesar Compra</button>
-                        </div>
-                    </form>
+                <h2><strong>Formulario de compra</strong></h2>
+                <p>Por favor, llene la siguiente información para proseguir con la compra: </p>
+                <form action="">
+                    <div class="form_purchase">
+                        <label for="" class="">Nombre del Cliente
+                            <input type="text" name="" id="" placeholder="Digite su nombre" class="purchase_input" aria-label="Nombre del Cliente" required>
+                        </label>
+                        <label for="">Título de la Película
+                            <input type="text" name="" id="" placeholder="Digite el titulo de la pelicula" class="purchase_input" aria-label="Titulo de la Pelicula" required>
+                        </label>
+                         <label for="">Edad
+                             <input type="number" name="" id="" min="2" max="99" class="purchase_input" aria-label="Edad" required>
+                        </label>
+                        <label for="">Cantidad de Tickets
+                             <input type="number" name="" id="" min="1" max="9" class="purchase_input" aria-label="Cantidad de Tickets" required>
+                        </label>
+                    </div>
+                    <div class="form_actions">
+                        <button type="submit">Procesar Compra</button>
+                        <button type="reset">Limpiar formulario</button>
+                    </div>
+                </form>
             </div>
             <div class="movies_list">
                  <!--Creación de la tabla contenedora de la cartelera de cine-->
@@ -92,13 +108,13 @@
             </div>
             <div class="footer_contact">
                 <a href="#" class="social_link" aria-label="Facebook">
-                    <img src="" alt="Facebook">
+                    <img src="/proyectoIntegrador/img/Facebook.svg" alt="Facebook">
                 </a>
                 <a href="#" class="social_link" aria-label="Twitter">
-                    <img src="" alt="Twitter">
+                    <img src="/proyectoIntegrador/img/Twitter.svg" alt="Twitter">
                 </a>
                 <a href="#" class="social_link" aria-label="Instagram">
-                    <img src="" alt="Facebook">
+                    <img src="/proyectoIntegrador/img/Intagram.svg" alt="Facebook">
                 </a>
             </div>
             <div class="footer_legal">

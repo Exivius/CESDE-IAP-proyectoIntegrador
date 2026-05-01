@@ -1,19 +1,197 @@
+/*ESTILOS GENERALES*/
 body{
     font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #FFD700;
 }
 
-.main_content{
+button{
+    border-radius: 5px;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #FFD700;
+}
+
+/*Se da estilos a los imputs cuando esten siendo seleccionados*/
+input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+input[type="text"]:focus::placeholder{
+    color: #FFD700;
+}
+
+input[type="number"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #FFD700;
+    margin: auto;
+    padding: 10px;
+}
+
+a:hover{
+    color: #d1cfc3;
+}
+
+/*ESTILOS DEL HEADER*/
+
+/*Da estilo al contenedor del header, ademas de separarlo del margen superior
+del navegados y en margen superior del main*/
+.header_section{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
-/*Header*/
+/*Da estilo al logo y titulo de la pagina, poniendo uno al lado del otro
+y separandolos*/
+.header_brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
-/*Main*/
+}
 
-/*Hav que los elementos del formulatio de compra queden uno debajo del otro*/
-.form_purchase{
+.header_nav{
+    margin: auto;
+}
+
+/*pone los elementos de la barra de navegación uno al lado del otro y los centra*/
+.header_nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+/*Le da tamaño al lodo que va al lado del nombre*/
+.header_brand img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+/*ESTILOS DEL MAIN*/
+.main_content{
     display: flex;
     flex-direction: column;
 }
 
-/*Footer*/
+.main_content div{
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/*Hace que los elementos del formulatio de compra queden uno debajo del otro*/
+.form_purchase{
+    display: flex;
+    flex-direction: column;
+}
+/*Permite que los elementos del main se organizen en filas cuando se supere 768px*/
+@media (min-width: 768px) {
+    .main_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.ticket_purchase label{
+    padding-top: 10px;
+    padding-right:px;
+}
+
+.movies_list{
+    padding-top: 5px;
+    padding-bottom: 300px;
+}
+
+/*ESTILOS DEO FOOTER*/
+.footer_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_legal ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Permite organizar en fila los elementos del footer cuando se alcance 768px*/
+@media (min-width: 768px) {
+    .footer_information{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer_information div{
+    margin: auto;
+    padding-left: 20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    }
+
+    .footer_legal ul{
+    display: flex;
+    flex-direction: row;
+    }
+
+    .movies_list{
+    padding-top: 50px;
+    padding-bottom: 300px;
+    }
+}
+
+.footer_information div{
+    margin: auto;
+    padding-left: 10px;
+    padding-right:  10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+/*Establece un tamaño predeterminado para las imagenes de contacto*/
+.footer_contact img{
+    width: 24px;
+    height: 24px;
+}
+
+/*Agrega efecto al poner el cursor encima de los iconos de contacto*/
+.footer_contact img:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    border-radius: 100px;
+}
