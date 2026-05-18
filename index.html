@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/proyectoIntegrador/CSS/style.css">
     <title>CineMax CESDE</title>
 </head>
@@ -15,8 +16,8 @@
             </div>
             <nav class="header_nav">
                 <ul>
-                    <li><a href="#">Películas</a></li>
-                    <li><a href="#">Comidas</a></li>
+                    <li><a href="/proyectoIntegrador/index.html">Películas</a></li>
+                    <li><a href="/proyectoIntegrador/purchaseForm.html">Compra</a></li>
                     <li><a href="#">Iniciar sesión</a></li>
                 </ul>
             </nav>
@@ -24,34 +25,10 @@
 
     </header>
     <main>
-        <section class="main_content">
-            <div class="ticket_purchase">
-                <h2><strong>Formulario de compra</strong></h2>
-                <p>Por favor, llene la siguiente información para proseguir con la compra: </p>
-                <form action="">
-                    <div class="form_purchase">
-                        <label for="" class="">Nombre del Cliente
-                            <input type="text" name="" id="" placeholder="Digite su nombre" class="purchase_input" aria-label="Nombre del Cliente" required>
-                        </label>
-                        <label for="">Título de la Película
-                            <input type="text" name="" id="" placeholder="Digite el titulo de la pelicula" class="purchase_input" aria-label="Titulo de la Pelicula" required>
-                        </label>
-                         <label for="">Edad
-                             <input type="number" name="" id="" min="2" max="99" class="purchase_input" aria-label="Edad" required>
-                        </label>
-                        <label for="">Cantidad de Tickets
-                             <input type="number" name="" id="" min="1" max="9" class="purchase_input" aria-label="Cantidad de Tickets" required>
-                        </label>
-                    </div>
-                    <div class="form_actions">
-                        <button type="submit">Procesar Compra</button>
-                        <button type="reset">Limpiar formulario</button>
-                    </div>
-                </form>
-            </div>
+        <section class="main_content"> 
             <div class="movies_list">
                  <!--Creación de la tabla contenedora de la cartelera de cine-->
-                <table border="1">
+                <table>
                     <thead>
                         <!--Definición de los titulos en las columnas de la tabla-->
                         <tr>
@@ -68,7 +45,9 @@
                             <td>20:30</td>
                             <td>Aventura</td>
                             <td>
-                                <img src="/proyectoIntegrador/img/TLOTR.jpg" alt="PosterTLOTR">
+                                <a href="">
+                                    <img src="/proyectoIntegrador/img/TLOTR.jpg" alt="PosterTLOTR">
+                                </a>                                
                             </td>
                             <td>
                                 <iframe src="https://www.youtube.com/embed/LbfMDwc4azU?si=qCzIuHfO63Cb4S1R" frameborder="0" title="TrailerTLOTF"></iframe>
