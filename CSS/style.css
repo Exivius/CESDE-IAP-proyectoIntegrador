@@ -5,20 +5,26 @@ body{
     color: #FFD700;
 }
 
+/*Se da estilo a todos los botones*/
 .allButton{
     border-radius: 5px;
     background-color: #B80F0F;
     color: #FFD700;
+        border: 1px solid white;
+
 }
 
+/*Se definir la clase para sobreescribir algunas de las propiedades por defecto de bootstrap*/
 .font_color{
     color: #FFD700;
 }
 
+/*Efecto al poner el cursor sobre un link*/
 .font_color:hover{
     color: #d1cfc3;
 }
 
+/*Efecto al poner el cursor sobre un boton*/
 .allButton:hover{
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px #000001;
@@ -37,10 +43,12 @@ input[type="text"]:focus{
     color: #FFD700;
 }
 
+/*Efecto que da al "pararse" sobre un cuadro de texto*/
 input[type="text"]:focus::placeholder{
     color: #FFD700;
 }
 
+/*Efecto que da al pararse sobre un cuadro numerico*/
 input[type="number"]:focus{
     outline: none;
     border: 1px solid #c6c6c6;
@@ -49,6 +57,7 @@ input[type="number"]:focus{
     color: #FFD700;
 }
 
+/*Elimina la decoración por defecto de los links*/
 a{
     text-decoration: none;
     color: #FFD700;
@@ -56,6 +65,7 @@ a{
     padding: 10px;
 }
 
+/*Da efecto al poner el cursor sobre un link*/
 a:hover{
     color: #d1cfc3;
 }
@@ -98,8 +108,33 @@ del navegados y en margen superior del main*/
 
 /*formulario de compra*/
 
+/*Añade margenes el formulario de compra*/
 .purchase_form{
     margin: 100px;
+}
+
+/*Estilos del detalle de la pelicula*/
+
+.movie-details{
+    background-color: #B80F0F;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+/*Se le cambia el tamaño a la imagen de la pagina del detalle de la pelicula*/
+.movie_poster img{
+    width: 250px;
+}
+
+/*Ajustando el video para que sea reponsive*/
+.movie-trailer{
+    position: relative;
+    width: 100%;
+}
+
+.trailer-container{
 }
 
 /*ESTILOS DEO FOOTER*/
@@ -110,11 +145,6 @@ del navegados y en margen superior del main*/
     justify-content: center;
     background-color: #B80F0F;
     margin-top: 30px;
-}
-
-.footer_legal ul{
-    display: flex;
-    flex-direction: column;
 }
 
 /*Permite organizar en fila los elementos del footer cuando se alcance 768px*/
