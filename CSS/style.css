@@ -57,6 +57,30 @@ input[type="number"]:focus{
     color: #FFD700;
 }
 
+input[type="date"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+input[type="time"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+.form-select:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
 /*Elimina la decoración por defecto de los links*/
 a{
     text-decoration: none;
@@ -76,9 +100,6 @@ li{
 
 /*ESTILOS DEL HEADER*/
 
-/*Da estilo al contenedor del header, ademas de separarlo del margen superior
-del navegados y en margen superior del main*/
-
 /*Le da tamaño al logo que va al lado del nombre*/
 .header_img{
     width: 80px;
@@ -89,6 +110,7 @@ del navegados y en margen superior del main*/
 
 /*ESTILOS DEL MAIN*/
 
+/*Le añade margen superior a las tarjetas de la cartelera*/
 .movie_card{
     margin-top: 90px;
 }
@@ -132,9 +154,6 @@ del navegados y en margen superior del main*/
 .movie-trailer{
     position: relative;
     width: 100%;
-}
-
-.trailer-container{
 }
 
 /*ESTILOS DEO FOOTER*/
