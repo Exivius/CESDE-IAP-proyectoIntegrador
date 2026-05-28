@@ -11,7 +11,6 @@ body{
     background-color: #B80F0F;
     color: #FFD700;
     border: 1px solid white;
-
 }
 
 /*Se definir la clase para sobreescribir algunas de las propiedades por defecto de bootstrap*/
@@ -26,13 +25,12 @@ body{
 
 /*Efecto al poner el cursor sobre un boton*/
 .allButton:hover{
-    border: 2px solid #c6c6c6;
+    outline: 1px solid #c6c6c6;
     color: #FFD700;
-    background-color: #B80F0F;
-    
+    background-color: #B80F0F;    
 }
 
-/*Se da estilos a los imputs cuando esten siendo seleccionados*/
+/*Se da estilos a los inputs cuando esten siendo seleccionados*/
 input[type="text"]:focus{
     outline: none;
     border: 1px solid #c6c6c6;
